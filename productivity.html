@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="productivity.css">
+    <title>home page</title>
+</head>
+<body>
+    <h1 id="header">welcome to duetiful!</h1>
+    <h3 id="header2">write a task</h3>
+    <div id="container">
+        <input type="text" id="taskInput">
+        <button id="nextButton">next -></button>
+    </div>
+    <div class="impo" id="importanceContainer" style="display:none;">
+        <h3 id="imp">how important is this task?</h3>
+        <button class="importanceButton" id="one">1</button>
+        <button class="importanceButton" id="two">2</button>
+        <button class="importanceButton" id="three">3</button>
+        <button class="importanceButton" id="four">4</button>
+        <button class="importanceButton" id="five">5</button>
+        <button class="importanceButton" id="six">6</button>
+        <button class="importanceButton" id="seven">7</button>
+        <button class="importanceButton" id="eight">8</button>
+        <button class="importanceButton" id="nine">9</button>
+        <button class="importanceButton" id="ten">10</button>
+    </div>
+    <div id="durationContainer" style="display:none;">
+        <h3>how long will your task take? (in minutes)</h3>
+        <div class="slidecontainer">
+            <input type="range" min="1" max="240" value="120" class="slider" id="myRange">
+            <button id="addTaskButton">+ add task</button>
+        </div>
+        <p>my task will take <span id="demo">120</span> minutes to complete</p>
+    </div>
+    <hr>
+    <h3>tasks added</h3>
+    <ol id="taskList">
+        <!-- insert tasks -->
+    </ol>
+    <script src="productivity.js"></script>
+</body>
+</html>
