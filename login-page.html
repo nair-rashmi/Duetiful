@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login-style.css">
+    <title>login to duetiful</title>
+</head>
+<body>
+    <div class="container">
+        <form class="form" id="login">
+            <h1 class="form-title">login</h1>
+            <div class="form_message form_message-error"></div>
+            <div class="form_input-group">
+                <input type="text" class="form_input" autofocus placeholder="username or email id">
+                <div class="form_message form_input-error-message"></div>
+            </div>
+            <div class="form_input-group">
+                <input type="password" class="form_input" autofocus placeholder="password">
+                <div class="form_input-error-message"></div>
+            </div>
+            <button class="form_button" type="submit">log in</button>
+            <p class="form_text">
+                <a href="forgot-pwd.html" class="form_link">i forgot my password</a>
+            </p>
+            <p class="form_text">
+                <a class="form_link" href="./" id="linkCreateAccount">i don't have an account</a>
+            </p>
+            <button id="homebtn" onclick="goBack()">go home</button>
+            <script src="login-page.js"></script>
+        </form>
+        <form class="form form-hidden" id="createAccount">
+            <h1 class="form-title">create account</h1>
+            <div class="form_message form_message-error"></div>
+            <div class="form_input-group">
+                <input type="text" id="signupUsername" class="form_input" autofocus placeholder="username">
+                <div class="form_message form_input-error-message"></div>
+            </div>
+            <div class="form_input-group">
+                <input type="email" class="form_input" autofocus placeholder="email id">
+                <div class="form_message form_input-error-message"></div>
+            </div>
+            <div class="form_input-group">
+                <input type="password" id="signupPassword" class="form_input" autofocus placeholder="password">
+                <div class="form_input-error-message"></div>
+            </div>
+            <div class="form_input-group">
+                <input type="password" id="signupConfirmPassword" class="form_input" autofocus placeholder="confirm password">
+                <div class="form_input-error-message"></div>
+            </div>
+            <button class="form_button" type="submit">sign up</button>
+            <p class="form_text">
+                <a class="form_link" href="./" id="linkLogin">i already have an account</a>
+            </p>
+            <button id="homebtn"><a href="index.html">go home</a></button>
+        </form>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
